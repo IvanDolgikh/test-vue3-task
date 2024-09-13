@@ -11,14 +11,17 @@ import * as directives from 'vuetify/directives';
 import { mdi } from 'vuetify/iconsets/mdi';
 
 const vuetify = createVuetify({
-  components,
-  directives,
-  icons: {
-    defaultSet: 'mdi',
-    sets: {
-      mdi,
+    components,
+    theme: {
+        defaultTheme: 'dark',
     },
-  },
+    directives,
+    icons: {
+        defaultSet: 'mdi',
+        sets: {
+            mdi,
+        },
+    },
 });
 
 createApp(App).use(vuetify).mount('#app');
