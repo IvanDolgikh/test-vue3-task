@@ -53,7 +53,7 @@ watch(selectedOption, newValue => {
 
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .custom-select {
     .v-field__input {
         max-height: 46px;
