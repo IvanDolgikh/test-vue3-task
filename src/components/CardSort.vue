@@ -43,9 +43,9 @@ function getLocalCards() {
 watch(selectedOption, newValue => {
     getLocalCards()
     if (newValue === 'по возрастанию рейтинга') {
-        return cards.value.sort((a, b) => b.rating.rate - a.rating.rate)
-    } else if (newValue === 'по убыванию рейтинга') {
         return cards.value.sort((a, b) => a.rating.rate - b.rating.rate)
+    } else if (newValue === 'по убыванию рейтинга') {
+        return cards.value.sort((a, b) => b.rating.rate - a.rating.rate)
     } else if (newValue === 'без сортировки') {
         return copiedCards.value
     }
